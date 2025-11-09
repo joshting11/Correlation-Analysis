@@ -9,7 +9,7 @@ st.title("📊 Stock Correlation Analyzer")
 
 # --- User Inputs ---
 tickers_input = st.text_input("Enter tickers separated by commas (e.g. CSL.AX, NVDA, AAPL):")
-years = st.number_input("Enter the time frame in years:", min_value=0.1, max_value=10.0, value=2.0, step=0.5)
+years = st.number_input("Enter the historical analysis time frame in years:", min_value=0.1, max_value=10.0, value=2.0, step=0.5)
 
 if tickers_input:
     tickers = [ticker.strip() for ticker in tickers_input.split(",")]
